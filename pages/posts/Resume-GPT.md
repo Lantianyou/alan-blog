@@ -1,4 +1,10 @@
-# 简历
+---
+title: 简历
+date: 2023/3/18
+description: 个人简历，由 GPT-4 荣誉生成
+tag: resume
+author: You
+---
 
 ## 教育经历
 
