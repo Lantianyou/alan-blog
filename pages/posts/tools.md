@@ -1,7 +1,7 @@
 ---
 title: Tools I use
 date: 2023/3/18
-description: Unix Philosophy
+description: Unix Philosophy, only sharp tools can cut through the noise
 tag: alan
 author: You
 ---
