@@ -1,7 +1,12 @@
-const { promises: fs } = require('fs')
-const path = require('path')
-const RSS = require('rss')
-const matter = require('gray-matter')
+import { promises as fs } from 'fs'
+import path from 'path'
+import RSS from 'rss'
+import matter from 'gray-matter'
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 async function generate() {
   const feed = new RSS({
@@ -23,7 +28,7 @@ async function generate() {
 
       allPosts.push({
         title: frontmatter.data.title,
-        url: '/posts/' + name.replace(/\.mdx?/, ''),
+        url: `/posts/${name.replace(/\.mdx?/, '')}`,
         date: frontmatter.data.date,
         description: frontmatter.data.description,
         categories: frontmatter.data.tag.split(', '),
