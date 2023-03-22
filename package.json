@@ -19,13 +19,6 @@
     "rss": "^1.2.2",
     "three": "^0.150.1"
   },
-  "prettier": {
-    "arrowParens": "always",
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "none",
-    "semi": false
-  },
   "devDependencies": {
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
