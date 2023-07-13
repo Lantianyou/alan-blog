@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@react-three/drei':
     specifier: ^9.57.3
@@ -40,11 +44,11 @@ devDependencies:
     specifier: 18.16.7
     version: 18.16.7
   '@types/react':
-    specifier: 18.0.37
-    version: 18.0.37
+    specifier: 18.2.15
+    version: 18.2.15
   '@types/react-dom':
-    specifier: 18.0.11
-    version: registry.npmmirror.com/@types/react-dom@18.0.11
+    specifier: 18.2.7
+    version: 18.2.7
   autoprefixer:
     specifier: ^10.4.14
     version: registry.npmmirror.com/autoprefixer@10.4.14(postcss@8.4.21)
@@ -450,8 +454,14 @@ packages:
   /@types/prop-types@15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
 
-  /@types/react@18.0.37:
-    resolution: {integrity: sha512-4yaZZtkRN3ZIQD3KSEwkfcik8s0SWV+82dlJot1AbGYHCzJkWP3ENBY6wYeDRmKZ6HkrgoGAmR2HqdwYGp6OEw==}
+  /@types/react-dom@18.2.7:
+    resolution: {integrity: sha512-GRaAEriuT4zp9N4p1i8BDBYmEyfo+xQ3yHjJU4eiK5NDa1RmUZG+unZABUTK4/Ox/M+GaHwb6Ow8rUITrtjszA==}
+    dependencies:
+      '@types/react': 18.2.15
+    dev: true
+
+  /@types/react@18.2.15:
+    resolution: {integrity: sha512-oEjE7TQt1fFTFSbf8kkNuc798ahTUzn3Le67/PWjE8MAfYAD/qB7O8hSTcromLFqHCt9bcdOg5GXMokzTjJ5SA==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -2436,7 +2446,7 @@ packages:
       react: '>=16'
     dependencies:
       '@types/mdx': registry.npmmirror.com/@types/mdx@2.0.3
-      '@types/react': 18.0.37
+      '@types/react': 18.2.15
       react: registry.npmmirror.com/react@18.2.0
     dev: false
 
@@ -2720,20 +2730,12 @@ packages:
     version: 2019.7.0
     dev: false
 
-  registry.npmmirror.com/@types/react-dom@18.0.11:
-    resolution: {integrity: sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/@types/react-dom/-/react-dom-18.0.11.tgz}
-    name: '@types/react-dom'
-    version: 18.0.11
-    dependencies:
-      '@types/react': 18.0.37
-    dev: true
-
   registry.npmmirror.com/@types/react-reconciler@0.26.7:
     resolution: {integrity: sha512-mBDYl8x+oyPX/VBb3E638N0B7xG+SPk/EAMcVPeexqus/5aTpTphQi0curhhshOqRrc9t6OPoJfEUkbymse/lQ==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/@types/react-reconciler/-/react-reconciler-0.26.7.tgz}
     name: '@types/react-reconciler'
     version: 0.26.7
     dependencies:
-      '@types/react': 18.0.37
+      '@types/react': 18.2.15
     dev: false
 
   registry.npmmirror.com/@types/react-reconciler@0.28.2:
@@ -2741,7 +2743,7 @@ packages:
     name: '@types/react-reconciler'
     version: 0.28.2
     dependencies:
-      '@types/react': 18.0.37
+      '@types/react': 18.2.15
     dev: false
 
   registry.npmmirror.com/@types/unist@2.0.6:
